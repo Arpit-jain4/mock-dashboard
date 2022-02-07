@@ -1,0 +1,41 @@
+<section class="filter-section filter-div">
+    <div class="flex flex-col md:flex-row items-center justify-between">
+    <div class="flex py-7 title mx-0 md:mx-6 items-center justify-between">
+        <div class="w-full flex">
+            <div class="vertical-align">
+                <mat-icon>dashboard</mat-icon>
+                <span class="lg:mx-2">Filter</span>
+            </div>
+        </div>
+        
+    </div>
+    <div class="graph flex flex-col md:flex-row items-center justify-between">
+            <div class="vertical-align items-center mx-2">
+                <span>Date Range</span>
+            </div>
+            <div class="w-full button-div flex items-center justify-around mt-2 md:mt-0">
+                    <div class="buttons p-2 vertical-align">
+                        <mat-icon class="mx-2">calendar_today</mat-icon>
+                        <span>2021-04-28</span>
+                    </div>
+                    <div class="vertical-align items-center mx-2">
+                        <span>to</span>
+                    </div>
+                    <div class="buttons p-2 vertical-align">
+                        <mat-icon class="mx-2">calendar_today</mat-icon>
+                        <span>2021-04-28</span>
+                    </div>
+                </div>
+                <div class="buttons p-2 my-2 vertical-align mx-3">
+                    <span>Custom Range</span>
+                </div>
+            
+            </div>
+    </div> 
+    <div id="chart">
+        <apx-chart
+            [series]="chartOptions.series"
+            [chart]="chartOptions.chart"
+        ></apx-chart>
+    </div>
+</section>

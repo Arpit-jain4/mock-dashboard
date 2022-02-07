@@ -5,7 +5,7 @@
 
             <div class="data-col col-span-4 md:col-span-2 lg:col-span-1">
               <!-- Column Content -->
-              <div class="inner-content">
+              <div class="inner-content cursor-pointer">
                 <div class="data-title items-center my-5">
                     <span>LIVE CONVERSATION COUNT</span>
                 </div>
@@ -16,7 +16,7 @@
               
             </div>
           
-            <div class="data-col col-span-4 md:col-span-2 lg:col-span-1">
+            <div class="data-col cursor-pointer col-span-4 md:col-span-2 lg:col-span-1" (click)="openDetails('TOTAL MESSAGES', chartOptions)">
               <div class="inner-content">
                 <div class="data-title items-center my-5">
                     <span>TOTAL MESSAGES</span>
@@ -34,7 +34,7 @@
               </div>
             </div>
           
-            <div class="data-col col-span-4 md:col-span-2 lg:col-span-1">
+            <div class="data-col cursor-pointer col-span-4 md:col-span-2 lg:col-span-1" (click)="openDetails('TOTAL SENT MESSAGES', chartOptions)">
                 <div class="inner-content">
                     <div class="data-title items-center my-5">
                     <span>TOTAL SENT MESSAGES</span>
@@ -54,7 +54,7 @@
                 
             </div>
           
-            <div class="data-col col-span-4 md:col-span-2 lg:col-span-1">
+            <div class="data-col cursor-pointer col-span-4 md:col-span-2 lg:col-span-1" (click)="openDetails('TOTAL RECEIVED MESSAGES', chartOptions)">
                 <div class="inner-content">
                     <div class="data-title items-center my-5">
                         <span>TOTAL RECEIVED MESSAGES</span>
@@ -76,7 +76,7 @@
         </div>
         <div class="grid gap-4 grid-cols-4 my-2">
 
-            <div class="data-col col-span-4 md:col-span-2 lg:col-span-1">
+            <div class="data-col cursor-pointer col-span-4 md:col-span-2 lg:col-span-1" (click)="openDetails('TOTAL CONVERSATIONS', chartOptions)">
               <!-- Column Content -->
               <div class="inner-content">
                 <div class="data-title items-center my-5">
@@ -95,7 +95,7 @@
               
             </div>
           
-            <div class="data-col col-span-4 md:col-span-2 lg:col-span-1">
+            <div class="data-col cursor-pointer col-span-4 md:col-span-2 lg:col-span-1" (click)="openDetails('AVERAGE SESSION LENGTH', chartOptions)">
               <div class="inner-content">
                 <div class="data-title items-center my-5">
                     <span>AVERAGE SESSION LENGTH</span>
@@ -113,7 +113,8 @@
             
             </div>
           
-            <div class="data-col col-span-4 md:col-span-2 lg:col-span-1">
+            <div class="data-col cursor-pointer col-span-4 md:col-span-2 lg:col-span-1"
+            (click)="openDetails('AVG. CONV. STEPS/USER', chartOptions)">
                 <div class="inner-content">
                     <div class="data-title items-center my-5">
                     <span>AVG. CONV. STEPS/USER</span>
@@ -132,7 +133,8 @@
                 
             </div>
           
-            <div class="data-col col-span-4 md:col-span-2 lg:col-span-1">
+            <div class="data-col cursor-pointer col-span-4 md:col-span-2 lg:col-span-1"
+            (click)="openDetails('AVG. CONV/USER', chartOptions)">
                 <div class="inner-content">
                     <div class="data-title items-center my-5">
                         <span>AVG. CONV/USER</span>
@@ -154,7 +156,7 @@
         </div>
         <div class="grid gap-4 grid-cols-4 my-2">
 
-            <div class="data-col col-span-4 md:col-span-2 lg:col-span-1">
+            <div class="data-col cursor-pointer col-span-4 md:col-span-2 lg:col-span-1" (click)="openDetails('LIVE CONVERSATION COUNT', chartOptions)">
               <!-- Column Content -->
               <div class="inner-content">
                 <div class="data-title items-center my-5">
@@ -173,7 +175,8 @@
               
             </div>
           
-            <div class="data-col col-span-4 md:col-span-2 lg:col-span-1">
+            <div class="data-col cursor-pointer col-span-4 md:col-span-2 lg:col-span-1"
+            (click)="openDetails('TOTAL MESSAGES', chartOptions)">
               <div class="inner-content">
                 <div class="data-title items-center my-5">
                     <span>TOTAL MESSAGES</span>
@@ -191,7 +194,8 @@
             
             </div>
           
-            <div class="data-col col-span-4 md:col-span-2 lg:col-span-1">
+            <div class="data-col cursor-pointer col-span-4 md:col-span-2 lg:col-span-1"
+            (click)="openDetails('TOTAL SENT MESSAGES', chartOptions)">
                 <div class="inner-content">
                     <div class="data-title items-center my-5">
                     <span>TOTAL SENT MESSAGES</span>
@@ -211,7 +215,8 @@
                 
             </div>
           
-            <div class="data-col col-span-4 md:col-span-2 lg:col-span-1">
+            <div class="data-col cursor-pointer col-span-4 md:col-span-2 lg:col-span-1"
+            (click)="openDetails('TOTAL RECEIVED MESSAGES', chartOptions)">
                 <div class="inner-content">
                     <div class="data-title items-center my-5">
                         <span>TOTAL RECEIVED MESSAGES</span>

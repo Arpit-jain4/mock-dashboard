@@ -3,7 +3,7 @@
     <div *ngIf="mobileQuery.matches">
 
     
-    <div class="vertical-align logo my-3">
+    <div class="vertical-align logo my-3 cursor-pointer">
       <img src="assets/logo.svg" style="height: 50px; width: 50px;">
       <div class="mx-6">
         <p class="analytics">botanalytics</p>
@@ -24,7 +24,7 @@
         <div class="dashboard-icon flex items-center mx-3">
           <button class="cursor-pointer vertical-align">
             <mat-icon>dashboard</mat-icon>
-            <span class="dashboard-title mx-4">Dashboard</span>
+            <span class="dashboard-title mx-4">Conversations</span>
           </button>
         </div>
       </mat-list-item>
@@ -32,7 +32,7 @@
         <div class="dashboard-icon flex items-center mx-3">
           <button class="cursor-pointer vertical-align">
           <mat-icon>dashboard</mat-icon>
-          <span class="dashboard-title mx-4">Dashboard</span>
+          <span class="dashboard-title mx-4">Users</span>
         </button>
         </div>
       </mat-list-item>
@@ -40,7 +40,7 @@
         <div class="dashboard-icon flex items-center mx-3">
           <button class="cursor-pointer vertical-align">
           <mat-icon>dashboard</mat-icon>
-          <span class="dashboard-title mx-4">Dashboard</span>
+          <span class="dashboard-title mx-4">Engagement</span>
         </button>
         </div>
       </mat-list-item>
@@ -48,7 +48,15 @@
         <div class="dashboard-icon flex items-center mx-3">
           <button class="cursor-pointer vertical-align">
             <mat-icon>dashboard</mat-icon>
-            <span class="dashboard-title mx-4">Dashboard</span>
+            <span class="dashboard-title mx-4">Integrations</span>
+        </button>
+        </div>
+      </mat-list-item>
+      <mat-list-item (click) = 'connection()'>
+        <div class="dashboard-icon flex items-center mx-3">
+          <button class="cursor-pointer vertical-align">
+            <img src="assets/icons8-twitter.svg">
+
         </button>
         </div>
       </mat-list-item>
@@ -70,51 +78,47 @@
             <mat-icon class="menu-icon">menu</mat-icon>
       </button>
     <div class="w-full flex" *ngIf="!mobileQuery.matches">
-      <div class="vertical-align flex items-center logo w-3/12" >
+      <div class="vertical-align flex items-center logo w-3/12 cursor-pointer" >
         <img src="assets/logo.svg" style="height: 80px; width: 50px;">
         <div class="mx-6">
           <p >botanalytics</p>
         </div>
         
       </div>
-      <div class="dashboard-icon vertical-align w-1.2/12 mx-3">
+      <div class="dashboard-icon vertical-align w-1.2/12 mx-3 cursor-pointer">
         <mat-icon>dashboard</mat-icon>
         <div class="vertical-align dashboard-title mx-2">
           <p >Dashboard</p>
         </div>
       </div>
-      <div class="dashboard-icon vertical-align w-1.2/12 mx-3">
+      <div class="dashboard-icon vertical-align w-1.2/12 mx-3 cursor-pointer">
         <mat-icon>dashboard</mat-icon>
         <div class="vertical-align dashboard-title mx-2">
           <p >Conversations</p>
         </div>
       </div>
-      <div class="dashboard-icon vertical-align w-1.2/12 mx-3">
+      <div class="dashboard-icon vertical-align w-1.2/12 mx-3 cursor-pointer">
         <mat-icon>dashboard</mat-icon>
         <div class="vertical-align dashboard-title mx-2">
           <p >Users</p>
         </div>
       </div>
-      <div class="dashboard-icon vertical-align w-1.2/12 mx-3">
+      <div class="dashboard-icon vertical-align w-1.2/12 mx-3 cursor-pointer">
         <mat-icon>dashboard</mat-icon>
         <div class="vertical-align dashboard-title mx-2">
           <p >Engagement</p>
         </div>
       </div>
-      <div class="dashboard-icon vertical-align w-1.2/12 mx-3">
+      <div class="dashboard-icon vertical-align w-1.2/12 mx-3 cursor-pointer">
         <mat-icon>dashboard</mat-icon>
         <div class="vertical-align dashboard-title mx-2">
           <p >Integrations</p>
         </div>
       </div>
-      <div class="dashboard-icon vertical-align w-3/12">
+      <div class="dashboard-icon vertical-align w-3/12 cursor-pointer">
         <div class="w-full twitter-icon vertical-align">
-          
             <img src="assets/icons8-twitter.svg">
-          
-          
         </div>
-        
       </div>
     </div>
     </mat-toolbar>

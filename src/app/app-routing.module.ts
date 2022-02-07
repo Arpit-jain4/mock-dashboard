@@ -14,6 +14,14 @@ const routes: Routes = [
         (m) => m.DashboardModule
       ),
   },
+  {
+    path: 'details',
+    loadChildren: () =>
+      import('./page/details/details.module').then(
+        (m) => m.DetailsModule
+      ),
+  },
+
 ];
 
 @NgModule({

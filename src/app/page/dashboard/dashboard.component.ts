@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import { ChartComponent } from 'ng-apexcharts';
 
 
@@ -10,7 +11,7 @@ import { ChartComponent } from 'ng-apexcharts';
 export class DashboardComponent implements OnInit {
   @ViewChild('chart') chart: any;
   public chartOptions: any;
-  constructor() { 
+  constructor(private router: Router,) { 
     this.chartOptions = {
       series: [
         {
@@ -35,6 +36,11 @@ export class DashboardComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  openDetails(title: any, data: any) {
+    console.log(title, data)
+    this.router.navigateByUrl(`/details?title=${title}`)
   }
 
 }

@@ -16,11 +16,11 @@ export class AppComponent {
     private changeDetectorRef: ChangeDetectorRef,
     private router: Router
     ) {
+      this.isSideNavOpen = false;
     this.mobileQuery = media.matchMedia('(max-width: 769px)');
-    this.isSideNavOpen = this.mobileQuery.matches;
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
-    console.log(this.isSideNavOpen)
+    
   }
 
   maintainSideNav() {
@@ -29,6 +29,10 @@ export class AppComponent {
 
   goToDashboard() {
     this.router.navigateByUrl('/dashboard')
+  }
+
+  connection() {
+
   }
 
 }
