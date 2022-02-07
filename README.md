@@ -19,7 +19,7 @@ This Project is done by Arpit jain. Data in this project is kept static because 
 ## Steps to run the project##
 1. clone the repository
 2. Do npm i
-3. ng serve to run the project at localhost: 42000
+3. ng serve to run the project at localhost: 4200
 
 You can see my work
 
