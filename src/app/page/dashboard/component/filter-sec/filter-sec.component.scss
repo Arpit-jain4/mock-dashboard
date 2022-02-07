@@ -1,0 +1,27 @@
+.filter-section{
+    margin-top: 30px;
+    border: solid #E6EAEE 1px;
+    height: 130px;
+    
+        background-color: #fff; 
+        height: 100%;
+        .title{
+            font-size: 30px;
+            color: lightgreen;
+            .content{
+                justify-content: right;
+            }
+        }
+        .button-div{
+            max-width: 340px;
+        }
+        .buttons{
+            border: solid #E6EAEE 2px;
+            height:40px;
+            border-radius: 20px;
+            @media (min-width: 1024px) {
+                width: 200px;
+            }
+        }
+    
+}

@@ -1,0 +1,91 @@
+
+
+article{
+    background-color: #F7FAF9 !important;
+    @media (min-width: 1024px) {
+    width: 90%;
+    margin: auto;
+    }
+    color: #6F7984;
+    .filter-section{
+        margin-top: 30px;
+        border: solid #E6EAEE 1px;
+        height: 130px;
+        
+            background-color: #fff; 
+            height: 100%;
+            .title{
+                font-size: 30px;
+                color: lightgreen;
+                .content{
+                    justify-content: right;
+                }
+            }
+            .button-div{
+                max-width: 340px;
+            }
+            .buttons{
+                border: solid #E6EAEE 2px;
+                height:40px;
+                border-radius: 20px;
+                @media (min-width: 1024px) {
+                    width: 200px;
+                }
+            }
+        
+    }
+    .data-section{
+
+        .data-col{
+            min-height: 250px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border: solid #E6EAEE 2px;
+            border-radius: 4px;
+            background-color: #fff;
+            .data-title{
+                font-size: 14px;
+                color: #ABB4BD;
+                @media (min-width: 1024px) {
+                    font-size: 16px;
+                }
+            }
+            .data-count{
+                font-size: 36px;
+                color: #000000;
+                font-weight: 300;
+                @media (min-width: 1024px) {
+                    font-size: 40px;
+                }
+            }
+            .inner-content{
+                width: 80%;
+                margin: auto;
+                #chart{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }   
+    .tables{
+        
+        .table{
+            border: solid #E6EAEE 2px;
+            background-color: #fff;
+            border-radius: 4px;
+            .title{
+                color: #4CD397;
+                font-size: 24px;
+                font-weight: 300;
+            }
+            .text{
+                color: #ABB4BD;            
+            }
+        }
+    }
+}
+
+
+
+

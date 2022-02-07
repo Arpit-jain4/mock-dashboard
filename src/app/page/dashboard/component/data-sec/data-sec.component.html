@@ -1,0 +1,18 @@
+<div class="data-col col-span-4 md:col-span-2 lg:col-span-1">
+    <div class="inner-content">
+      <div class="data-title items-center my-5">
+          <span>{{title}}</span>
+      </div>
+      <div class="data-count">
+        <span>{{count}}
+        </span>
+      </div>
+      
+    </div>
+    <div id="chart" *ngIf = 'isChart'>
+      <apx-chart
+        [series]="chartOptions.series"
+        [chart]="chartOptions.chart"
+      ></apx-chart>
+    </div>
+  </div>

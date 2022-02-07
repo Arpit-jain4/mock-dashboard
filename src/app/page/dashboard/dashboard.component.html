@@ -1,0 +1,317 @@
+<article class="my-6">
+    <app-filter-sec></app-filter-sec>
+    <section class="data-section my-6">
+        <div class="grid gap-4 grid-cols-4">
+
+            <div class="data-col col-span-4 md:col-span-2 lg:col-span-1">
+              <!-- Column Content -->
+              <div class="inner-content">
+                <div class="data-title items-center my-5">
+                    <span>LIVE CONVERSATION COUNT</span>
+                </div>
+                <div class="data-count">
+                  <span>3.6K</span>
+                </div>
+              </div>
+              
+            </div>
+          
+            <div class="data-col col-span-4 md:col-span-2 lg:col-span-1">
+              <div class="inner-content">
+                <div class="data-title items-center my-5">
+                    <span>TOTAL MESSAGES</span>
+                </div>
+                <div class="data-count">
+                  <span>51.33K</span>
+                </div>
+                
+              </div>
+              <div id="chart">
+                <apx-chart
+                  [series]="chartOptions.series"
+                  [chart]="chartOptions.chart"
+                ></apx-chart>
+              </div>
+            </div>
+          
+            <div class="data-col col-span-4 md:col-span-2 lg:col-span-1">
+                <div class="inner-content">
+                    <div class="data-title items-center my-5">
+                    <span>TOTAL SENT MESSAGES</span>
+                </div>
+                <div class="data-count">
+                  <span>30.62K</span>
+                </div>
+                <div id="chart">
+                  <apx-chart
+                    [series]="chartOptions.series"
+                    [chart]="chartOptions.chart"
+                  ></apx-chart>
+                </div>
+              
+              </div>
+              
+                
+            </div>
+          
+            <div class="data-col col-span-4 md:col-span-2 lg:col-span-1">
+                <div class="inner-content">
+                    <div class="data-title items-center my-5">
+                        <span>TOTAL RECEIVED MESSAGES</span>
+                    </div>
+                    <div class="data-count">
+                      <span>20.71K</span>
+                    </div>
+                    <div id="chart">
+                      <apx-chart
+                        [series]="chartOptions.series"
+                        [chart]="chartOptions.chart"
+                      ></apx-chart>
+                    </div>
+                </div>
+              
+                
+            </div>
+          
+        </div>
+        <div class="grid gap-4 grid-cols-4 my-2">
+
+            <div class="data-col col-span-4 md:col-span-2 lg:col-span-1">
+              <!-- Column Content -->
+              <div class="inner-content">
+                <div class="data-title items-center my-5">
+                    <span>TOTAL CONVERSATIONS</span>
+                </div>
+                <div class="data-count">
+                  <span>4.25K</span>
+                </div>
+                <div id="chart">
+                  <apx-chart
+                    [series]="chartOptions.series"
+                    [chart]="chartOptions.chart"
+                  ></apx-chart>
+                </div>
+              </div>
+              
+            </div>
+          
+            <div class="data-col col-span-4 md:col-span-2 lg:col-span-1">
+              <div class="inner-content">
+                <div class="data-title items-center my-5">
+                    <span>AVERAGE SESSION LENGTH</span>
+                </div>
+                <div class="data-count">
+                  <span>2.04 Min.</span>
+                </div>
+                <div id="chart">
+                  <apx-chart
+                    [series]="chartOptions.series"
+                    [chart]="chartOptions.chart"
+                  ></apx-chart>
+                </div>
+              </div>
+            
+            </div>
+          
+            <div class="data-col col-span-4 md:col-span-2 lg:col-span-1">
+                <div class="inner-content">
+                    <div class="data-title items-center my-5">
+                    <span>AVG. CONV. STEPS/USER</span>
+                </div>
+                <div class="data-count">
+                  <span>1.92</span>
+                </div>
+                <div id="chart">
+                  <apx-chart
+                    [series]="chartOptions.series"
+                    [chart]="chartOptions.chart"
+                  ></apx-chart>
+                </div>
+              </div>
+              
+                
+            </div>
+          
+            <div class="data-col col-span-4 md:col-span-2 lg:col-span-1">
+                <div class="inner-content">
+                    <div class="data-title items-center my-5">
+                        <span>AVG. CONV/USER</span>
+                    </div>
+                    <div class="data-count">
+                      <span>2.07</span>
+                    </div>
+                    <div id="chart">
+                      <apx-chart
+                        [series]="chartOptions.series"
+                        [chart]="chartOptions.chart"
+                      ></apx-chart>
+                    </div>
+                </div>
+              
+                
+            </div>
+          
+        </div>
+        <div class="grid gap-4 grid-cols-4 my-2">
+
+            <div class="data-col col-span-4 md:col-span-2 lg:col-span-1">
+              <!-- Column Content -->
+              <div class="inner-content">
+                <div class="data-title items-center my-5">
+                    <span>LIVE CONVERSATION COUNT</span>
+                </div>
+                <div class="data-count">
+                  <span>3.6K</span>
+                </div>
+                <div id="chart">
+                  <apx-chart
+                    [series]="chartOptions.series"
+                    [chart]="chartOptions.chart"
+                  ></apx-chart>
+                </div>
+              </div>
+              
+            </div>
+          
+            <div class="data-col col-span-4 md:col-span-2 lg:col-span-1">
+              <div class="inner-content">
+                <div class="data-title items-center my-5">
+                    <span>TOTAL MESSAGES</span>
+                </div>
+                <div class="data-count">
+                  <span>3.6K</span>
+                </div>
+                <div id="chart">
+                  <apx-chart
+                    [series]="chartOptions.series"
+                    [chart]="chartOptions.chart"
+                  ></apx-chart>
+                </div>
+              </div>
+            
+            </div>
+          
+            <div class="data-col col-span-4 md:col-span-2 lg:col-span-1">
+                <div class="inner-content">
+                    <div class="data-title items-center my-5">
+                    <span>TOTAL SENT MESSAGES</span>
+                </div>
+                <div class="data-count">
+                  <span>3.6K</span>
+                </div>
+                <div id="chart">
+                  <apx-chart
+                    [series]="chartOptions.series"
+                    [chart]="chartOptions.chart"
+                  ></apx-chart>
+                </div>
+              
+              </div>
+              
+                
+            </div>
+          
+            <div class="data-col col-span-4 md:col-span-2 lg:col-span-1">
+                <div class="inner-content">
+                    <div class="data-title items-center my-5">
+                        <span>TOTAL RECEIVED MESSAGES</span>
+                    </div>
+                    <div class="data-count">
+                      <span>3.6K</span>
+                    </div>
+                    <div id="chart">
+                      <apx-chart
+                        [series]="chartOptions.series"
+                        [chart]="chartOptions.chart"
+                      ></apx-chart>
+                    </div>
+                </div> 
+            </div>        
+        </div>          
+    </section>
+    <section class="tables gap-4 flex flex-col md:flex-row items-center mb-3">
+        <div class="table w-full">
+          <!-- Column Content -->
+          <div class="title my-5 mx-5">
+            Most common intents
+          </div>
+          <div class="mx-5 text">
+            <div class="flex mx-2 py-4">
+              <div class="w-1/2 items-start">
+                payment
+              </div>
+              <div class="w-1/2 text-right">
+                58.4%
+              </div>
+            </div>
+            <div class="flex mx-2 py-4">
+              <div class="w-1/2">
+                payment
+              </div>
+              <div class="w-1/2 text-right">
+                58.4%
+              </div>
+            </div>
+            <div class="flex mx-2 py-4">
+              <div class="w-1/2 items-start">
+                payment
+              </div>
+              <div class="w-1/2 text-right">
+                58.4%
+              </div>
+            </div>
+            <div class="flex mx-2 py-4">
+              <div class="w-1/2 items-start">
+                payment
+              </div>
+              <div class="w-1/2 text-right">
+                58.4%
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="table w-full">
+          <div class="title my-5 mx-5">
+            Most common intents
+          </div>
+          <div class="mx-5 text">
+            <div class="flex mx-2 py-4">
+              <div class="w-1/2 items-start">
+                payment
+              </div>
+              <div class="w-1/2 text-right">
+                58.4%
+              </div>
+            </div>
+            <div class="flex mx-2 py-4">
+              <div class="w-1/2">
+                payment
+              </div>
+              <div class="w-1/2 text-right">
+                58.4%
+              </div>
+            </div>
+            <div class="flex mx-2 py-4">
+              <div class="w-1/2 items-start">
+                payment
+              </div>
+              <div class="w-1/2 text-right">
+                58.4%
+              </div>
+            </div>
+            <div class="flex mx-2 py-4">
+              <div class="w-1/2 items-start">
+                payment
+              </div>
+              <div class="w-1/2 text-right">
+                58.4%
+              </div>
+            </div>
+          </div>
+        </div>
+      
+   
+    </section>
+</article>
+

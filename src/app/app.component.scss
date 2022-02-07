@@ -1,0 +1,46 @@
+.top-bar{
+    .tool-bar{
+        background-image: linear-gradient(15deg, #073C86 0%, #1583BA 100%);
+        height: 100px;
+        color: #fff;
+        .dashboard-title{
+            p{
+                margin: 0;}
+        }
+    }
+    .twitter-icon{
+        height: 60px;
+        width: 60px;
+        border-radius: 50px;
+        background-color: #fff;
+        img{
+            height: 50px;
+            width: 50px;
+            color: #fff;
+        }
+    }
+}
+mat-sidenav-container{
+    height: 100%;
+    mat-list-item{
+        height: 100px;
+    }
+    .analytics {
+        font-size: 20px;
+    }
+}
+mat-toolbar{
+    height: 100%;
+}
+
+mat-sidenav {
+    max-width: 300px;
+  
+    @media (max-width: 992px) {
+      width: 250px;
+    }
+  
+    @media (max-width: 800px) {
+      width: 250px;
+    }
+}
